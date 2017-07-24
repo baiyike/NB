@@ -1,0 +1,53 @@
+.header {
+  width: 100%;
+  height: 8.3rem;
+  background-color: #f9a507;
+  position: relative; }
+  .header .header-logo {
+    width: 7.5rem;
+    height: 3.45rem;
+    background: url(../image/logo.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 4.85rem;
+    bottom: 1.3rem; }
+  .header .header-zc {
+    font-size: 0.7rem;
+    float: right;
+    padding: 0.6rem 0.4rem 0px 0px; }
+    .header .header-zc a {
+      color: white; }
+
+.username ul {
+  padding: 2.2rem 0.7rem 1.5rem; }
+  .username ul li {
+    font-size: 0.7rem;
+    border-bottom: 1px solid #f6f6f6;
+    line-height: 2.15rem; }
+    .username ul li i {
+      font-size: 0.8rem;
+      color: #e5e5e5; }
+    .username ul li input {
+      padding-left: 0.35rem; }
+.username .submit {
+  text-align: center; 
+    margin-top: 1.5rem;
+  ;
+  }
+  .username .submit a {
+    padding: 0.7rem 6.8rem 0.5rem;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    color: white;
+    background: #ffd974; 
+    margin-top: 1rem;
+    }
+
+.footer {
+  padding: 8.6rem 0 0.6rem;
+  text-align: center;
+  font-size: 0.65rem; }
+  .footer a {
+    color: #ffd974; }
+
+/*# sourceMappingURL=login.css.map */

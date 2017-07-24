@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #F5F5F5;
+}
+.header{
+	height: 4rem;
+	position: relative;
+	background: #ffac2c;
+}
+.header a{
+	position: absolute;
+	left: 1.2rem;
+	top: 1.4rem;
+	
+}
+
+.header a i{
+	font-size: 1.6rem;
+	color: #fff;	
+	cursor: pointer;
+}
+.header p{
+	font-size: 1.6rem;
+	line-height: 4rem;
+	text-align: center;
+	color: #fff;
+}
+.content{
+	width: 100%;
+}
+/*.content>p{
+	color: #A7A7A7;
+	padding: 0.8rem 1rem ;
+}*/
+
+.logo_box{
+	margin-top: 0.7rem;
+	width: 100%;
+	background-color: white;
+}
+
+.logo{
+	display: flex;
+	align-items: center;
+	color: #666666;
+	padding: 1.2rem 0.7rem;
+	position: relative;
+	font-size: 1.4rem;
+}
+.logo>img{
+	width: 3.2rem;
+	height: 3.2rem;
+}
+.zuo{
+	margin-left: 1rem ; 
+}
+.zuo img{
+	width:5.4rem;
+	height: 1.6rem;
+	margin-top: .5rem;
+}
+.you {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	top: 2.2rem;
+	right: 1.2rem;
+}
+.you p{
+	color: #FA5A2A;
+}
+.content>ul{
+	width: 100%;
+	background: #fff;
+	margin-top: 1.6rem;
+	font-size: 1.4rem;
+}
+.content>ul>li{
+	border:.5px solid #F0F0F0;
+}
+.content>ul>li>a{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 1.2rem;
+}
+.content>p{
+	width: 100%;
+	background: #fff;
+	padding: 1.2rem;
+	text-align: center;
+	margin-top: 1.4rem;
+}
+.content>p>a{
+	font-size: 1.4rem;
+}

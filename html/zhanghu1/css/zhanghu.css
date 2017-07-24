@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  background-color: #f5f5f5; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+  html .cang, body .cang {
+    width: 100%;
+    height: 80%;
+    background-color: black;
+    opacity: .2;
+    position: absolute;
+    bottom: 0;
+    display: none; }
+  html .yin, body .yin {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    top: 4rem;
+    padding: 0 2.5rem; }
+    html .yin .qb, body .yin .qb {
+      border-radius: .5rem;
+      background-color: #e0e0e0;
+      margin-top: 2.2rem;
+      padding: 1rem .8rem;
+      width: 9rem;
+      text-align: center;
+      font-size: 1.4rem; }
+    html .yin .qb:hover, body .yin .qb:hover {
+      color: white;
+      background-color: #ffb902; }
+    html .yin .er p:hover, body .yin .er p:hover {
+      background-color: #ffb902;
+      color: white; }
+    html .yin .er, body .yin .er {
+      display: flex;
+      margin-bottom: 1.5rem;
+      justify-content: space-between; }
+      html .yin .er p, body .yin .er p {
+        background-color: #e0e0e0;
+        border-radius: .5rem;
+        margin-top: 2.2rem;
+        padding: 1rem;
+        width: 9rem;
+        text-align: center;
+        font-size: 1.4rem; }
+      html .yin .er .p2, body .yin .er .p2 {
+        margin-left: 1rem; }
+    html .yin .ding, body .yin .ding {
+      background-color: #a6a6a6;
+      height: 1px;
+      position: relative;
+      margin-top: 1.7rem; }
+      html .yin .ding p, body .yin .ding p {
+        position: absolute;
+        left: 43%;
+        padding: .5rem;
+        background-color: white;
+        color: #a6a6a6;
+        top: -1.2rem; }
+
+.header {
+  height: 4rem;
+  position: relative;
+  background: #ffac2c; }
+
+.header_down {
+  position: absolute;
+  top: 1.4rem;
+  left: 19.8rem;
+  color: white;
+  font-size: 1.2rem; }
+
+.header a {
+  position: absolute;
+  left: 1.4rem;
+  top: 1.2rem; }
+
+.header a i {
+  font-size: 1.6rem;
+  color: #fff;
+  cursor: pointer; }
+
+.header p {
+  font-size: 1.6rem;
+  line-height: 4rem;
+  text-align: center;
+  color: #fff; }
+
+.header_botton {
+  width: 100%;
+  padding: 1.2rem 1rem;
+  font-size: 1.2rem;
+  color: #bdbdbd; }
+
+.ull li {
+  width: 100%;
+  background-color: white;
+  padding: 1.2rem 0.6rem;
+  display: flex;
+  border-bottom: 1px solid #eee; }
+  .ull li a {
+    width: 100%;
+    display: flex;
+    align-items: center; }
+    .ull li a .r {
+      margin-left: 1.3rem;
+      width: 60%; }
+    .ull li a img {
+      width: 3rem;
+      height: 3rem;
+      vertical-align: bottom; }
+    .ull li a .tiant {
+      display: flex;
+      align-items: center; }
+      .ull li a .tiant p {
+        border-radius: 1rem;
+        text-align: center;
+        padding: .3rem .7rem; }
+      .ull li a .tiant .sy1 {
+        border: 1px solid #ffcb7b;
+        color: #ffcb7b; }
+      .ull li a .tiant .sy2 {
+        border: 1px solid #67e2f9;
+        color: #67e2f9; }
+      .ull li a .tiant .sy3 {
+        border: 1px solid #ffcb7b;
+        color: #ffcb7b; }
+      .ull li a .tiant .sy4 {
+        border: 1px solid #f456f9;
+        color: #f456f9; }
+      .ull li a .tiant .sy5 {
+        border: 1px solid #f456f9;
+        color: #f456f9; }
+      .ull li a .tiant span {
+        font-size: 1.3rem;
+        color: #373737;
+        margin-left: .4rem; }
+    .ull li a .shijian {
+      color: #373737;
+      margin-top: .4rem; }
+    .ull li a .ri_ght {
+      font-size: 1.4rem;
+      color: #37de43; }
+    .ull li a .red {
+      color: #f96940;
+      font-size: 1.4rem; }
+
+/*# sourceMappingURL=zhanghu.css.map */

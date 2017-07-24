@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+header {
+  width: 100%;
+  height: 10rem;
+  background: #FEA411;
+  position: relative; }
+  header .banner_img {
+    width: 30%;
+    position: absolute;
+    left: 35%;
+    top: 20%; }
+  header div {
+    width: 100%;
+    height: 0.9rem;
+    position: absolute;
+    top: 75%;
+    display: flex;
+    justify-content: center; }
+    header div .header_word1 {
+      color: white;
+      display: flex;
+      align-items: center; }
+    header div .header_word2 {
+      width: 20%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #FFC801;
+      margin-left: 1%; }
+      header div .header_word2  span{
+      	color: white;
+      }
+      header div .header_word2 img {
+        width: 15%;
+        margin-right: 2%; }
+
+article {
+  width: 100%;
+  background: #F5F5F5; }
+  article .zhexian {
+    width: 14.7rem;
+    height: 4.7rem;
+    margin: 0 auto;
+    display: flex; }
+    article .zhexian .zhexian_zuo {
+      width: 45%;
+      height: 100%; }
+      article .zhexian .zhexian_zuo .zhanghu {
+        width: 100%;
+        height: 1.8rem;
+        color: gainsboro;
+        line-height: 1.8rem;
+        font-weight: 900; }
+      article .zhexian .zhexian_zuo .shuliang {
+        width: 100%;
+        height: 2.9rem;
+        line-height: 2.9rem;
+        color: gainsboro; }
+        article .zhexian .zhexian_zuo .shuliang span {
+          color: red;
+          font-size: 1.5rem;
+          font-weight: 900; }
+    article .zhexian .zhexian_you {
+      width: 55%;
+      height: 100%; }
+      article .zhexian .zhexian_you .zhanghu {
+        width: 100%;
+        height: 1.8rem;
+        color: gainsboro;
+        line-height: 1.8rem;
+        font-weight: 900; }
+      article .zhexian .zhexian_you img {
+        width: 100%;
+        height: 44%; }
+      article .zhexian .zhexian_you .shuzi {
+        width: 100%;
+        height: 0.8rem;
+        display: flex;
+        justify-content: space-between;
+         }
+         article .zhexian .zhexian_you .shuzi span
+         {
+         	color: gray;
+         }
+  article .wuyong {
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid gainsboro; }
+    article .wuyong .liebiao {
+      width: 14.7rem;
+      height: 2rem;
+      margin: 0 auto;
+      display: flex;
+      align-items: center; }
+      article .wuyong .liebiao img {
+        width: 1.1rem;
+        height: 1.1rem; }
+      article .wuyong .liebiao .yy {
+        width: 7rem;
+        height: 100%;
+        margin-left: 0.8rem;
+        font-size: 0.7rem;
+        color: gray;
+        font-weight: bold;
+        display: flex;
+        align-items: center; }
+      article .wuyong .liebiao .yy1 {
+        width: 5.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 0.6rem;
+        
+        color: red; }
+        article .wuyong .liebiao .yy1 .icon {
+          color: gray; }
+  article .first {
+    margin-top: 0.8rem; }
+  article .last {
+    margin-top: 0.7rem; }

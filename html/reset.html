@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/Font-Awesome-3.2.1/css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/reste.css"/>
+		<title></title>
+	</head>
+	<script src="../js/fontSize.js"></script>
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<body>
+		<div class="header">
+			<a href="#" class="icon-chevron-left"></a>
+			<p>忘记密码</p>
+		</div>
+		<div class="usernamePhone">
+			    <div class="y">
+			    	<p>重置您的登录密码</p>
+					<div class="text clearfix">
+						 <i class="icon-lock"></i><input type="password" name="" id="" value="" placeholder="请输入与6-24位的登录密码"/><i class="icon-eye-close" onclick="changeFn(this)"></i>
+					</div>
+			    </div>
+				
+				<div class="submit">
+					<input type="submit" value="下一步"/>
+				</div>
+
+		</div>
+		<!--浮层-->
+		<div class="fc" style="display: none;">
+			<div class="tk">
+				<p>重置密码成功,请重新登录!</p>
+			    <a href="javascript:;" class="qr">确定</a>
+			</div>
+		</div>
+		
+	</body>
+	<script>
+		 $("input[type=submit]").click(function(){
+		 	 $(".fc").css("display","block");
+		 })
+		 $(".qr").click(function(){
+		 	$(".fc").css("display","none");
+		 	window.location="../index.html";
+		 })
+		 
+		 function changeFn(a){		
+			  if( $(a).attr("class") == "icon-eye-close"){
+			  	     $("input[type=password]").attr("type","text");
+			  	     $(a).attr("class","icon-eye-open");
+			  	
+			  }else{
+			  	     $("input[type=text]").attr("type","password");
+			  	     console.log($(a).attr('class'));
+			  	    $(a).attr("class","icon-eye-close");
+			  	
+			  }
+		 }
+		 
+	</script>
+</html>

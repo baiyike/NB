@@ -1,0 +1,173 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
+.header {
+  height: 7rem;
+  position: relative;
+  background: #ffac2c; }
+
+.header .alianjie {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.6rem; }
+
+.header a i {
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer; }
+
+.header .erweima {
+  font-size: 0.7rem;
+  line-height: 2.1rem;
+  text-align: center;
+  color: #fff; }
+
+.header_next {
+  width: 100%;
+  height: 4.9rem;
+  background: #FEAC25;
+  display: flex; }
+  .header_next .banner {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .header_next .banner img {
+      width: 70%;
+      margin-top: 0.5rem; }
+  .header_next .banner_right {
+    width: 45%;
+    height: 100%;
+    margin-left: 0.6rem; }
+    .header_next .banner_right .banner_right_first {
+      width: 100%;
+      height: 52%;
+      font-size: 0.6rem;
+      font-weight: 900;
+      color: white;
+      display: flex;
+      align-items: flex-end; }
+    .header_next .banner_right .banner_right_last {
+      width: 2.8rem;
+      height: 0.8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #FDC800;
+      margin-left: 1%;
+      margin-top: 4%; }
+      .header_next .banner_right .banner_right_last span {
+        color: white;
+        font-size: 0.5rem; }
+      .header_next .banner_right .banner_right_last img {
+        width: 15%;
+        margin-right: 2%; }
+  .header_next .banner_right2 {
+    width: 28%;
+    height: 100%;
+    display: flex; }
+    .header_next .banner_right2 p {
+      width: 3.7rem;
+      height: 1.3rem;
+      background: #FAC673;
+      border-radius: 10px;
+      color: #F8632E;
+      text-align: center;
+      line-height: 1.3rem;
+      margin-top: 2.5rem;
+      font-size: 0.6rem;
+      font-weight: 900; }
+
+.wanshan {
+  width: 100%;
+  height: 1.8rem;
+  background: #F5F5F5;
+  color: darkgray;
+  line-height: 1.8rem;
+  font-size: 0.6rem; }
+.wanshan p{
+	margin-left: 0.8rem;
+}
+.ziliao {
+  height: 2rem;
+  border-bottom: 1px solid gainsboro; }
+  .ziliao .liebiao1 {
+    width: 14.4rem;
+    height: 2rem;
+    margin: 0 auto;
+    margin-left:0.8rem ;
+    display: flex;
+    justify-content: space-between; }
+    .ziliao .liebiao1 .liebiao1_p1 {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      color:dimgray;
+      font-size: 0.7rem;
+      font-weight: 500; }
+    .ziliao .liebiao1 .liebiao1_p2 {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      font-size: 0.6rem;
+      color: #979797; }
+    .ziliao .liebiao1 .dange {
+      color:dimgray; }
+      .ziliao .liebiao1 .dange span {
+        color: #737373; }
+
+.first {
+  border-top: 1px solid gainsboro; }
+
+.tijiao {
+  height: 1.5rem;
+  margin-top: 0.8rem; }
+  .tijiao div {
+    width: 14.4rem;
+    height: 1.5rem;
+    margin: 0 auto; }
+    .tijiao div input {
+      width: 14.4rem;
+      height: 1.5rem;
+      background: #FED555;
+      border-radius: 7px;
+      color: white;
+      font-size: 0.7rem; }
+
+.content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1; }
+
+.motai {
+  width: 100%;
+  height: 100%;
+  background: black;
+  position: absolute;
+  z-index: 10;
+  opacity: 0.5;
+  display: none; }
+
+.zuixiamian {
+  position: absolute;
+  bottom: -5.7rem;
+  width: 100%;
+  height: 5.7rem;
+  background: white;
+  z-index: 11;
+  display: none; }
+  .zuixiamian li {
+    width: 100%;
+    height: 32%;
+    border-bottom: 1px solid gainsboro;
+    font-size: 0.6rem;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .zuixiamian .paizhao {
+    color: red; }

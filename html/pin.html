@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/Font-Awesome-3.2.1/css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/pin.css"/>
+	</head>
+	<script src="../js/fontSize.js"></script>
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<body>
+		<div class="header">
+			<a href="../html/wanji.html" class="icon-chevron-left"></a>
+			<p>忘记密码</p>
+		</div>
+		<div class="usernamePhone">
+			    <div class="y">
+			    	<p>请输入您收到的验证码</p>
+					<div class="text clearfix">
+						 <i class="icon-envelope"></i><input type="text" name="" id="" value="" placeholder="输入您的验证码"/><span id="time">60</span>
+					</div>
+			    </div>
+				
+				<div class="submit">
+					<input type="submit" value="下一步"/>
+				</div>
+
+		</div>
+		<script>
+			$("input[type=submit]").click(function(){
+				window.location="reset.html";
+			})
+			
+			
+			var trigger = window.location.search.substring(1);    //这里的参数看你需要，这里只是举个例子
+					if( trigger == 'trigger' ){
+					    
+					var setTime;
+					var time = parseInt($("#time").text());
+		            
+		            setTime=setInterval(function(){
+		            	if(time<=0){
+		            		clearInterval(setTime);
+		            		return;
+		            	}
+		            	time--;
+		            	$("#time").text(time);
+		            	if($("#time").text() == 30){
+		            		alert("亲您的时间快到了，如果亲没有接收到验证码，请及时联系管理人员")
+		            	}
+		            	
+		            },1000)
+			}
+		</script>
+	</body>
+</html>

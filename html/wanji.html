@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/Font-Awesome-3.2.1/css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/wanji.css"/>
+	</head>
+	<script src="../js/fontSize.js"></script>
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<body>
+		<div class="header">
+			<a href="../login.html" class="icon-chevron-left"></a>
+			<p>忘记密码</p>
+		</div>
+		<div class="usernamePhone">
+			    <div class="y">
+			    	<p>请输入你绑定的手机号</p>
+					<div class="text clearfix">
+						 <i class="icon-phone"></i><input type="text" name="" id="" value="" placeholder="手机号码" class="phone"/><i class="icon-remove-sign" style="display: none;"></i>
+					</div>
+			    </div>
+				
+				<div class="submit">
+					<input type="submit" value="下一步"""/>
+				</div>
+
+		</div>
+		<!--浮层-->
+		<div class="fc" style="display: none;">
+			<div class="tk">
+				<h4>确认手机号</h4>
+				<p>我们将发送验证码到:</p>
+				<p class="phone-yz"></p>
+				<ul>
+					<li><a href="javascript:;" class="btn-qx">取消</a></li>
+					<li><a href="javascript:;" class="btn-qx">确认</a></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script>
+
+         //验证码 添加在浮层内容中函数
+		 function fc(){	 	
+		 	var Inp= $("input[type=text]").val();
+		 	var yz = $("<span><span>");
+		 	yz.html(Inp);
+		 	$(".phone-yz").append(yz);
+		 }
+
+		 $("input[type=submit]").click(function(){
+		 	  $(".fc").css("display","block")
+		 	  fc()  
+		 });
+		 $(".phone").change(function(){
+		 	 if($(this).val().length != 0){
+		 	 	$(".icon-remove-sign").show();
+		 	 	$(".icon-remove-sign").click(function(){
+		 	 		$(".phone").val("");
+		 	 		$(".icon-remove-sign").hide();
+		 	 	})
+		 	 }else{
+		 	 	$(".icon-remove-sign").hide();
+		 	 }
+		 })
+		 //链接跳转
+		  $(".btn-qx").click(function(){  
+		 	  window.location="pin.html?trigger" 
+		 });
+	</script>
+</html>
